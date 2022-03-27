@@ -20,10 +20,11 @@ struct Node *create_binary_tree(){
     struct Node *node = (struct Node*)malloc(sizeof(struct Node));
     node->val = val;
 
-    //enter left subtree
+    // build left subtree
     cout<<"Enter left of "<<val<<", ";
     node->left = create_binary_tree();
 
+    // build right subtree
     cout<<"Enter right of "<<val<<", ";
     node->right = create_binary_tree();
 
