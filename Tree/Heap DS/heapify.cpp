@@ -32,7 +32,8 @@ void heapify(int a[], int i, int n){
 
 int main(){
     int heap_size = 7;
-    int heap[heap_size] = {5, 2, 7, 9, 8, 12, 3};
+    //int heap[heap_size] = {5, 2, 7, 9, 8, 12, 3};
+    int heap[heap_size] = {4, 6, 8, 10, 15, 30, 30};
     for(int i=(heap_size/2)-1; i>=0; i--){
         heapify(heap, i, heap_size);
     }
